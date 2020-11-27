@@ -498,6 +498,40 @@ files:
         }
     }
   learner_created: false
+- name: src/battleship/ShipType.java
+  visible: true
+  text: |-
+    package battleship;
+
+    public enum ShipType {
+
+        AIRCRAFT_CARRIER("Aircraft Carrier", 5),
+        BATTLESHIP("Battleship", 4),
+        SUBMARINE("Submarine", 3),
+        CRUISER("Cruiser", 3),
+        DESTROYER("Destroyer", 2);
+
+        private String name;
+        private int length;
+
+        ShipType(String name, int length) {
+            this.name = name;
+            this.length = length;
+        }
+
+        public String getName() {
+            return name;
+        }
+
+        public int getLength() {
+            return length;
+        }
+    }
+  learner_created: true
 feedback_link: https://hyperskill.org/projects/125/stages/665/implement#comment
-status: Unchecked
-record: -1
+status: Solved
+feedback:
+  message: Congratulations! Continue on <a href="https://hyperskill.org/projects/125/stages/665/implement">JetBrains
+    Academy</a>
+  time: Thu, 26 Nov 2020 10:52:04 UTC
+record: 3

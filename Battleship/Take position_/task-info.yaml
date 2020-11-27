@@ -283,9 +283,13 @@ files:
         }
     }
   learner_created: false
-- name: src/battleship/Battle.java
+- name: src/battleship/ShipType.java
   visible: true
   learner_created: true
 feedback_link: https://hyperskill.org/projects/125/stages/663/implement#comment
-status: Unchecked
-record: -1
+status: Solved
+feedback:
+  message: Congratulations! Continue on <a href="https://hyperskill.org/projects/125/stages/663/implement">JetBrains
+    Academy</a>
+  time: Wed, 25 Nov 2020 13:27:31 UTC
+record: 1
