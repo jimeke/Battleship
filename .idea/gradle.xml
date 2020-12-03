@@ -12,12 +12,27 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/Battleship/task" />
+            <option value="$PROJECT_DIR$/Problems/Bank account" />
             <option value="$PROJECT_DIR$/Problems/Convert to bytes" />
             <option value="$PROJECT_DIR$/Problems/Count words" />
             <option value="$PROJECT_DIR$/Problems/Days of the week" />
+            <option value="$PROJECT_DIR$/Problems/Employees" />
+            <option value="$PROJECT_DIR$/Problems/Find mistake" />
+            <option value="$PROJECT_DIR$/Problems/IntBinaryOperation" />
+            <option value="$PROJECT_DIR$/Problems/Movie" />
+            <option value="$PROJECT_DIR$/Problems/Overloading methods" />
+            <option value="$PROJECT_DIR$/Problems/Phone" />
+            <option value="$PROJECT_DIR$/Problems/Print" />
+            <option value="$PROJECT_DIR$/Problems/Publication and its subclasses" />
+            <option value="$PROJECT_DIR$/Problems/Publications" />
             <option value="$PROJECT_DIR$/Problems/Reverse input text" />
+            <option value="$PROJECT_DIR$/Problems/Saying animals" />
+            <option value="$PROJECT_DIR$/Problems/Shape hierarchy" />
+            <option value="$PROJECT_DIR$/Problems/Shapes area" />
             <option value="$PROJECT_DIR$/Problems/The root of a number" />
             <option value="$PROJECT_DIR$/Problems/Throw an unchecked exception" />
+            <option value="$PROJECT_DIR$/Problems/Time" />
+            <option value="$PROJECT_DIR$/Problems/Users and WebSites" />
             <option value="$PROJECT_DIR$/util" />
           </set>
         </option>
