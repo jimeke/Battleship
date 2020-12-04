@@ -72,6 +72,12 @@
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/util/Battleship.util.iml" filepath="$PROJECT_DIR$/.idea/modules/util/Battleship.util.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/util/Battleship.util.main.iml" filepath="$PROJECT_DIR$/.idea/modules/util/Battleship.util.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/util/Battleship.util.test.iml" filepath="$PROJECT_DIR$/.idea/modules/util/Battleship.util.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/util/ProjectsOnJava.Battleship.util.iml" filepath="$PROJECT_DIR$/.idea/modules/util/ProjectsOnJava.Battleship.util.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/util/ProjectsOnJava.Battleship.util.main.iml" filepath="$PROJECT_DIR$/.idea/modules/util/ProjectsOnJava.Battleship.util.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/util/ProjectsOnJava.Battleship.util.test.iml" filepath="$PROJECT_DIR$/.idea/modules/util/ProjectsOnJava.Battleship.util.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Battleship/task/task.Battleship.Battleship-task.iml" filepath="$PROJECT_DIR$/.idea/modules/Battleship/task/task.Battleship.Battleship-task.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Battleship/task/task.Battleship.Battleship-task.main.iml" filepath="$PROJECT_DIR$/.idea/modules/Battleship/task/task.Battleship.Battleship-task.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Battleship/task/task.Battleship.Battleship-task.test.iml" filepath="$PROJECT_DIR$/.idea/modules/Battleship/task/task.Battleship.Battleship-task.test.iml" />
     </modules>
   </component>
 </project>

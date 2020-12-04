@@ -1,55 +1,70 @@
 package battleship;
 
-import java.util.EnumSet;
 import java.util.Scanner;
 
 public class Main {
-    final static int n = 10;
-    final static int m = 10;
-    static char[][] board = initBoardWithDefaultValues();
-    static int[][] occupationBoard = new int[n][m];
-    static int leftBoatParts = 16;
+
+    static int evenOdd = 0;
+    static Board player1 = new Board();
+    static Board player2 = new Board();
 
     public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
 
-        drawBoard(board);
-        requestCoordinates(board);
-        startGame();
-    }
+        System.out.println("Player 1, place your ships on the game field\n"); // Game starts from replacement of 1st player's ships
 
-    static void startGame() {
-        System.out.println("\nThe game starts!\n");
-        drawFogOfWar(board);
-        System.out.println("\nTake a shot!\n");
-        Scanner r = new Scanner(System.in);
+        player1.drawBoard();
+        player1.requestCoordinates();
+
+        System.out.print("\nPress Enter and pass the move to another player"); // after pressing "Enter", 2nd player starts replacing own ships
+        String enter = scanner.nextLine();
+        if ("".equals(enter)) {
+            System.out.println("...\nPlayer 2, place your ships to the game field\n");
+            player2.drawBoard();
+            player2.requestCoordinates();
+        }
+        //end of ships replacement
+        pressEnter();
+
+        Scanner r = new Scanner(System.in); //here starts open the fire by coordinate
         char positionA_B = 0;
         int position1_10 = 0;
         boolean properInput = false;
 
-        while (!properInput) {
+        while (!properInput) { //if fire coordinate is incorrect, need to write again
             String coordinate = r.nextLine();
             positionA_B = coordinate.charAt(0);
             position1_10 = Integer.parseInt(coordinate.substring(1));
             properInput = checkFireCoordinate(positionA_B, position1_10);
         }
-        while (leftBoatParts != 0) {
-            if (board[positionA_B - 'A'][position1_10 - 1] == 'O') {
-                board[positionA_B - 'A'][position1_10 - 1] = 'X';
-                leftBoatParts--;
-                drawFogOfWar(board);
-                if (checkSank(positionA_B, position1_10)) {
-                    System.out.println("You sank a ship! Specify a new target:");
-                } else {
-                    System.out.println("\nYou hit a ship! Try again:\n");
-                }
-            } else if (board[positionA_B - 'A'][position1_10 - 1] == 'X') {
-                drawFogOfWar(board);
-                System.out.println("\nYou hit a ship! Try again:\n");
+//        evenOdd++;
+        while (true) {
+            if (playerChanger(player1, player2, evenOdd).getBoard()[positionA_B - 'A'][position1_10 - 1] == 'O') {
+                playerChanger(player1, player2, evenOdd).getBoard()[positionA_B - 'A'][position1_10 - 1] = 'X';
+                playerChanger(player1, player2, evenOdd).decreaseLeftBoatParts();
 
-            } else if (board[positionA_B - 'A'][position1_10 - 1] != 'O') {
-                board[positionA_B - 'A'][position1_10 - 1] = 'M';
-                drawFogOfWar(board);
-                System.out.println("\nYou missed. Try again:\n");
+                if (player1.getLeftBoatParts() == 0 || player2.getLeftBoatParts() == 0) {
+                    if (playerChanger(player1, player2, evenOdd).getBoard()[positionA_B - 'A'][position1_10 - 1] == 'O') {
+                        playerChanger(player1, player2, evenOdd).getBoard()[positionA_B - 'A'][position1_10 - 1] = 'X';
+                    }
+                    break;
+                } else if (checkSank(positionA_B, position1_10)) {
+                    System.out.println("You sank a ship!");
+                    pressEnter();
+
+                } else {
+                    System.out.print("\nYou hit a ship!");
+                    pressEnter();
+                }
+            } else if (playerChanger(player1, player2, evenOdd).getBoard()[positionA_B - 'A'][position1_10 - 1] == 'X') {
+                drawFogOfWar(playerChanger(player1, player2, evenOdd).getBoard());
+                System.out.print("\nYou hit a ship!");
+                pressEnter();
+
+            } else if (playerChanger(player1, player2, evenOdd).getBoard()[positionA_B - 'A'][position1_10 - 1] != 'O') {
+                playerChanger(player1, player2, evenOdd).setBoard(positionA_B - 'A', position1_10 - 1, 'M');
+                System.out.print("You missed!");
+                pressEnter();
             }
             String coordinate = r.nextLine();
             positionA_B = coordinate.charAt(0);
@@ -57,67 +72,65 @@ public class Main {
             System.out.println();
         }
 
-        if (board[positionA_B - 'A'][position1_10 - 1] == 'O') {
-            board[positionA_B - 'A'][position1_10 - 1] = 'X';
-        }
-
-        drawBoard(board);
+        playerChanger(player1, player2, evenOdd).drawBoard();
         System.out.println("\nYou sank the last ship. You won. Congratulations!");
-    }
+    } //game body
 
     static boolean checkSank(char a, int b) {
         int countOfO = 0;
         boolean isHorizontal = true;
         if (a == 'A') {
-            if (board[1][b - 1] == 'X' || board[1][b - 1] == 'O') {
+            if (playerChanger(player1, player2, evenOdd).getBoard()[1][b - 1] == 'X'
+                    || playerChanger(player1, player2, evenOdd).getBoard()[1][b - 1] == 'O') {
                 isHorizontal = false;
             }
         } else if (a == 'J') {
-            if (board[a - 'A' - 1][b - 1] == 'X' || board[a - 'A' - 1][b - 1] == 'O') {
+            if (playerChanger(player1, player2, evenOdd).getBoard()[a - 'A' - 1][b - 1] == 'X'
+                    || playerChanger(player1, player2, evenOdd).getBoard()[a - 'A' - 1][b - 1] == 'O') {
                 isHorizontal = false;
             }
         } else {
-            if (board[a - 'A' + 1][b - 1] == 'X'
-                    || board[a - 'A' + 1][b - 1] == 'O'
-                    || board[a - 'A' - 1][b - 1] == 'X'
-                    || board[a - 'A' - 1][b - 1] == 'O') {
+            if (playerChanger(player1, player2, evenOdd).getBoard()[a - 'A' + 1][b - 1] == 'X'
+                    || playerChanger(player1, player2, evenOdd).getBoard()[a - 'A' + 1][b - 1] == 'O'
+                    || playerChanger(player1, player2, evenOdd).getBoard()[a - 'A' - 1][b - 1] == 'X'
+                    || playerChanger(player1, player2, evenOdd).getBoard()[a - 'A' - 1][b - 1] == 'O') {
                 isHorizontal = false;
             }
         }
 
         if (!isHorizontal) { // for vertical
             for (int i = a - 'A'; i < 10; i++) { //for vertical in two direction counter
-                if (board[i][b - 1] != '~') {
-                    if (board[i][b - 1] == 'O') {
+                if (playerChanger(player1, player2, evenOdd).getBoard()[i][b - 1] != '~') {
+                    if (playerChanger(player1, player2, evenOdd).getBoard()[i][b - 1] == 'O') {
                         countOfO++;
                     }
                 }
             }
             for (int i = a - 'A'; i > 0; i--) {
-                if (board[i][b - 1] != '~') {
-                    if (board[i][b - 1] == 'O') {
+                if (playerChanger(player1, player2, evenOdd).getBoard()[i][b - 1] != '~') {
+                    if (playerChanger(player1, player2, evenOdd).getBoard()[i][b - 1] == 'O') {
                         countOfO++;
                     }
                 }
             }
         } else { //for horizontal
             for (int i = b - 1; i < 10; i++) {
-                if (board[a - 'A'][i] != '~') {
-                    if (board[a - 'A'][i] == 'O') {
+                if (playerChanger(player1, player2, evenOdd).getBoard()[a - 'A'][i] != '~') {
+                    if (playerChanger(player1, player2, evenOdd).getBoard()[a - 'A'][i] == 'O') {
                         countOfO++;
                     }
                 }
             }
             for (int i = b - 1; i > 0; i--) {
-                if (board[a - 'A'][i] != '~') {
-                    if (board[a - 'A'][i] == 'O') {
+                if (playerChanger(player1, player2, evenOdd).getBoard()[a - 'A'][i] != '~') {
+                    if (playerChanger(player1, player2, evenOdd).getBoard()[a - 'A'][i] == 'O') {
                         countOfO++;
                     }
                 }
             }
         }
         return countOfO == 0;
-    }
+    } //returning True if ship is sank
 
     static void drawFogOfWar(char[][] board) {
         char letter = 'A';
@@ -143,163 +156,7 @@ public class Main {
             }
             System.out.println();
         }
-    }
-
-    static void requestCoordinates(char[][] board) {
-        EnumSet.allOf(ShipType.class)
-                .forEach(shipType -> shipInput(board, shipType));
-    }
-
-    static void drawBoard(char[][] board) {
-        char letters = 'A';
-        int digits = 1;
-
-        for (int i = 0; i <= 10; i++) {
-            for (int j = 0; j <= 10; j++) {
-                if (i == 0 && j == 0) {
-                    System.out.print("  ");
-                } else if (j == 0) {
-                    System.out.print(letters + " ");
-                    letters++;
-                } else if (i == 0) {
-                    System.out.print(digits + " ");
-                    digits++;
-                } else {
-                    System.out.print(board[i - 1][j - 1] + " ");
-                }
-            }
-            System.out.println();
-        }
-    }
-
-    static char[][] initBoardWithDefaultValues() {
-        char[][] board = new char[n][m];
-        for (int i = 0; i < n; i++) {
-            for (int j = 0; j < m; j++) {
-                board[i][j] = '~';
-            }
-        }
-        return board;
-    }
-
-    static void shipInput(char[][] board, ShipType shipType) {
-        Scanner s = new Scanner(System.in);
-        String c1 = null;
-        String c2 = null;
-        boolean properInput = false;
-
-        System.out.println(String.format("\nEnter the coordinates of the %s (%d cells):", shipType.getName(), shipType.getLength()));
-
-        while (!properInput) {
-            System.out.println();
-            String coordinates = s.nextLine();
-            c1 = coordinates.split(" ")[0];
-            c2 = coordinates.split(" ")[1];
-            properInput = isInputValid(shipType, c1, c2);
-        }
-
-        drawShip(board, c1, c2);
-        drawBoard(board);
-    }
-
-    static void drawShip(char[][] board, String c1, String c2) {
-        if (c1.charAt(0) == c2.charAt(0)) {
-            int row = c1.charAt(0) - 'A';
-            int a = Integer.parseInt(c1.substring(1)) - 1;
-            int b = Integer.parseInt(c2.substring(1)) - 1;
-            int max = Math.max(a, b);
-            int min = Math.min(a, b);
-
-            for (int i = min; i <= max; i++) {
-                board[row][i] = 'O';
-            }
-            addOccupation(max, min, row, true);
-
-        } else if (c1.substring(1).equals(c2.substring(1))) {
-            int col = Integer.parseInt(c1.substring(1)) - 1;
-            int a = c1.charAt(0) - 'A';
-            int b = c2.charAt(0) - 'A';
-            int max = Math.max(a, b);
-            int min = Math.min(a, b);
-
-            for (int i = min; i <= max; i++) {
-                board[i][col] = 'O';
-            }
-            addOccupation(max, min, col, false);
-        }
-
-        for (int i = 0; i < n; i++) {
-            for (int j = 0; j < m; j++) {
-                System.out.print(occupationBoard[i][j] + " ");
-            }
-            System.out.println();
-        }
-    }
-
-    static boolean checkShipLocation(String c1, String c2) {
-        if (c1.charAt(0) == c2.charAt(0) || c1.charAt(1) == c2.charAt(1)) {
-            return true;
-        } else {
-            System.out.println("\nError! Wrong ship location! Try again:");
-            return false;
-        }
-    }
-
-    static boolean checkShipLength(ShipType shipType, String c1, String c2) {
-        boolean isValid = false;
-        if (c1.charAt(0) == c2.charAt(0)) {
-            int a = Integer.parseInt(c1.substring(1));
-            int b = Integer.parseInt(c2.substring(1));
-            isValid = a >= b ? a - b + 1 == shipType.getLength() : b - a + 1 == shipType.getLength();
-        } else if (c1.substring(1).equals(c2.substring(1))) {
-            char a = c1.charAt(0);
-            char b = c2.charAt(0);
-            isValid = a >= b ? a - b + 1 == shipType.getLength() : b - a + 1 == shipType.getLength();
-        }
-        if (!isValid) {
-            System.out.println(String.format("\nError! Wrong length of the %s! Try again:", shipType.getName()));
-        }
-        return isValid;
-    }
-
-    static boolean checkShipNeighbourhood(String c1, String c2) {
-        boolean isValid = true;
-        int minRow = Math.min(c1.charAt(0) - 'A', c2.charAt(0) - 'A');
-        int maxRow = Math.max(c1.charAt(0) - 'A', c2.charAt(0) - 'A');
-        int minCol = Math.min(Integer.parseInt(c1.substring(1)) - 1, Integer.parseInt(c2.substring(1)) - 1);
-        int maxCol = Math.max(Integer.parseInt(c1.substring(1)) - 1, Integer.parseInt(c2.substring(1)) - 1);
-
-        for (int i = minRow; i <= maxRow; i++) {
-            for (int j = minCol; j <= maxCol; j++) {
-                System.out.println(String.format("i = %d, j = %d", i, j));
-                if (occupationBoard[i][j] == 1) {
-                    System.out.println("\nError! You placed it too close to another one. Try again:");
-                    isValid = false;
-                    break;
-                }
-            }
-        }
-        return isValid;
-    }
-
-    static boolean isInputValid(ShipType shipType, String c1, String c2) {
-        return checkShipLocation(c1, c2) && checkShipLength(shipType, c1, c2) && checkShipNeighbourhood(c1, c2);
-    }
-
-    static void addOccupation(int max, int min, int c, boolean isHorizontal) {
-        int minCol, maxCol, minRow, maxRow;
-
-        minCol = isHorizontal ? Math.max(min - 1, 0) : Math.max(c - 1, 0);
-        maxCol = isHorizontal ? Math.min(max + 1, 9) : Math.min(c + 1, 9);
-        minRow = isHorizontal ? Math.max(c - 1, 0) : Math.max(min - 1, 0);
-        maxRow = isHorizontal ? Math.min(c + 1, 9) : Math.min(max + 1, 9);
-
-        for (int i = minRow; i <= maxRow; i++) {
-            for (int j = minCol; j <= maxCol; j++) {
-                occupationBoard[i][j] = 1;
-            }
-        }
-    }
+    } //showing opposite board without ships, just markers M -missed and X - crashed ships
 
     static boolean checkFireCoordinate(char a, int b) {
         if (a > 'A' - 1 && a < 'K' && b > 0 && b < 11) {
@@ -308,5 +165,32 @@ public class Main {
             System.out.println("Error! You entered the wrong coordinates! Try again:");
             return false;
         }
-    }
+    } //if input for fire coordinate is correct - returning true
+
+    static Board playerChanger(Board player1, Board player2, int evenOdd) {
+        if (evenOdd % 2 == 0) {
+            return player1;
+        }
+        return player2;
+    } // returning switched player, depend of evenOdd variable
+
+    static void pressEnter() { // switching player's board
+        Scanner scanner2 = new Scanner(System.in);
+        System.out.println("\nPress Enter and pass the move to another player\n...");
+        evenOdd++;
+        String enter2 = scanner2.nextLine();
+        if ("".equals(enter2)) {
+            drawFogOfWar(playerChanger(player1, player2, evenOdd).getBoard());
+            evenOdd++;
+            System.out.println("---------------------");
+            playerChanger(player1, player2, evenOdd).drawBoard();
+            if (evenOdd % 2 == 0) {
+                System.out.println("\nPlayer 1, it's your turn:\n");
+                evenOdd++;
+            } else {
+                System.out.println("\nPlayer 2, it's your turn:\n");
+                evenOdd++;
+            }
+        }
+    } //button for switching board
 }

@@ -1,3 +1,5 @@
+battleship/Board.java
+ battleship.Board
 battleship/Main.java
  battleship.Main
 battleship/ShipType.java

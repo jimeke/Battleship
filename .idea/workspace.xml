@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="3dc38dba-f4d7-40b0-827c-884868cdafd9" name="Default Changelist" comment="4/5 stage">
+      <change beforePath="$PROJECT_DIR$/.gradle/6.5/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.5/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.5/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.5/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.6.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.6.1/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.6.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.6.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.6.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.6.1/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.6.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.6.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.6.1/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.6.1/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.6.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.6.1/javaCompile/classAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.6.1/javaCompile/jarAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.6.1/javaCompile/jarAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.6.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.6.1/javaCompile/javaCompile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.6.1/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.6.1/javaCompile/taskHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/checksums/sha1-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/sha1-checksums.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/frameworkLessonHistory/storage.storageData" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/frameworkLessonHistory/storage.storageRecordIndex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_cedarsoftware_json_io_4_10_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_fasterxml_jackson_core_jackson_annotations_2_9_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_fasterxml_jackson_core_jackson_core_2_9_8.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_fasterxml_jackson_core_jackson_databind_2_9_8.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_github_hyperskill_hs_test_release_SNAPSHOT.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_github_stefanbirkner_system_rules_1_19_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_code_gson_gson_2_8_5.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__commons_codec_commons_codec_1_11.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__commons_logging_commons_logging_1_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__junit_junit_4_12.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_apache_httpcomponents_httpclient_4_5_9.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_apache_httpcomponents_httpcore_4_4_11.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_assertj_assertj_core_3_8_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_assertj_assertj_swing_3_8_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_assertj_assertj_swing_junit_3_8_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_easytesting_fest_reflect_1_4_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_easytesting_fest_util_1_2_5.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_hamcrest_hamcrest_core_1_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Battleship.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Battleship/task/Battleship.Battleship-task.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Battleship/task/Battleship.Battleship-task.main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Battleship/task/Battleship.Battleship-task.test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Bank account/Battleship.Problems-Bank_account.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Bank account/Battleship.Problems-Bank_account.main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Bank account/Battleship.Problems-Bank_account.test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Convert to bytes/Battleship.Problems-Convert_to_bytes.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Convert to bytes/Battleship.Problems-Convert_to_bytes.main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Convert to bytes/Battleship.Problems-Convert_to_bytes.test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Count words/Battleship.Problems-Count_words.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Count words/Battleship.Problems-Count_words.main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Count words/Battleship.Problems-Count_words.test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Days of the week/Battleship.Problems-Days_of_the_week.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Days of the week/Battleship.Problems-Days_of_the_week.main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Days of the week/Battleship.Problems-Days_of_the_week.test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Employees/Battleship.Problems-Employees.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Employees/Battleship.Problems-Employees.main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Employees/Battleship.Problems-Employees.test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Find mistake/Battleship.Problems-Find_mistake.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Find mistake/Battleship.Problems-Find_mistake.main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Find mistake/Battleship.Problems-Find_mistake.test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/IntBinaryOperation/Battleship.Problems-IntBinaryOperation.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/IntBinaryOperation/Battleship.Problems-IntBinaryOperation.main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/IntBinaryOperation/Battleship.Problems-IntBinaryOperation.test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Movie/Battleship.Problems-Movie.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Movie/Battleship.Problems-Movie.main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Movie/Battleship.Problems-Movie.test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Overloading methods/Battleship.Problems-Overloading_methods.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Overloading methods/Battleship.Problems-Overloading_methods.main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Overloading methods/Battleship.Problems-Overloading_methods.test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Phone/Battleship.Problems-Phone.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Phone/Battleship.Problems-Phone.main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Phone/Battleship.Problems-Phone.test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Print/Battleship.Problems-Print.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Print/Battleship.Problems-Print.main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Print/Battleship.Problems-Print.test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Publication and its subclasses/Battleship.Problems-Publication_and_its_subclasses.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Publication and its subclasses/Battleship.Problems-Publication_and_its_subclasses.main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Publication and its subclasses/Battleship.Problems-Publication_and_its_subclasses.test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Publications/Battleship.Problems-Publications.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Publications/Battleship.Problems-Publications.main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Publications/Battleship.Problems-Publications.test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Reverse input text/Battleship.Problems-Reverse_input_text.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Reverse input text/Battleship.Problems-Reverse_input_text.main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Reverse input text/Battleship.Problems-Reverse_input_text.test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Saying animals/Battleship.Problems-Saying_animals.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Saying animals/Battleship.Problems-Saying_animals.main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Saying animals/Battleship.Problems-Saying_animals.test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Shape hierarchy/Battleship.Problems-Shape_hierarchy.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Shape hierarchy/Battleship.Problems-Shape_hierarchy.main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Shape hierarchy/Battleship.Problems-Shape_hierarchy.test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Shapes area/Battleship.Problems-Shapes_area.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Shapes area/Battleship.Problems-Shapes_area.main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Shapes area/Battleship.Problems-Shapes_area.test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/The root of a number/Battleship.Problems-The_root_of_a_number.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/The root of a number/Battleship.Problems-The_root_of_a_number.main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/The root of a number/Battleship.Problems-The_root_of_a_number.test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Throw an unchecked exception/Battleship.Problems-Throw_an_unchecked_exception.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Throw an unchecked exception/Battleship.Problems-Throw_an_unchecked_exception.main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Throw an unchecked exception/Battleship.Problems-Throw_an_unchecked_exception.test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Time/Battleship.Problems-Time.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Time/Battleship.Problems-Time.main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Time/Battleship.Problems-Time.test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Users and WebSites/Battleship.Problems-Users_and_WebSites.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Users and WebSites/Battleship.Problems-Users_and_WebSites.main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Users and WebSites/Battleship.Problems-Users_and_WebSites.test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/util/Battleship.util.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/util/Battleship.util.main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/util/Battleship.util.test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Battleship/Friend or foe/task-info.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/Battleship/Friend or foe/task-info.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Battleship/task/build/classes/java/main/battleship/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/Battleship/task/build/classes/java/main/battleship/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Battleship/task/build/classes/java/main/battleship/ShipType.class" beforeDir="false" afterPath="$PROJECT_DIR$/Battleship/task/build/classes/java/main/battleship/ShipType.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Battleship/task/build/classes/java/test/Tests.class" beforeDir="false" afterPath="$PROJECT_DIR$/Battleship/task/build/classes/java/test/Tests.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Battleship/task/build/reports/tests/test/classes/Tests.html" beforeDir="false" afterPath="$PROJECT_DIR$/Battleship/task/build/reports/tests/test/classes/Tests.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Battleship/task/build/reports/tests/test/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Battleship/task/build/reports/tests/test/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Battleship/task/build/reports/tests/test/packages/default-package.html" beforeDir="false" afterPath="$PROJECT_DIR$/Battleship/task/build/reports/tests/test/packages/default-package.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Battleship/task/build/test-results/test/TEST-Tests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Battleship/task/build/test-results/test/TEST-Tests.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Battleship/task/build/test-results/test/binary/output.bin" beforeDir="false" afterPath="$PROJECT_DIR$/Battleship/task/build/test-results/test/binary/output.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Battleship/task/build/test-results/test/binary/output.bin.idx" beforeDir="false" afterPath="$PROJECT_DIR$/Battleship/task/build/test-results/test/binary/output.bin.idx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Battleship/task/build/test-results/test/binary/results.bin" beforeDir="false" afterPath="$PROJECT_DIR$/Battleship/task/build/test-results/test/binary/results.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Battleship/task/build/tmp/compileJava/source-classes-mapping.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Battleship/task/build/tmp/compileJava/source-classes-mapping.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Battleship/task/out/production/classes/battleship/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/Battleship/task/out/production/classes/battleship/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Battleship/task/out/production/classes/battleship/ShipType.class" beforeDir="false" afterPath="$PROJECT_DIR$/Battleship/task/out/production/classes/battleship/ShipType.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Battleship/task/src/battleship/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/Battleship/task/src/battleship/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/course-remote-info.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/course-remote-info.yaml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="Battleship" type="f1a62948:ProjectNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1kg3GXeVpBfYPzQPeUo1vvHtZpF" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.project.gradle" />
+    <property name="show.inlinked.gradle.project.popup" value="false" />
+  </component>
+  <component name="RunManager" selected="Application.Main (1)">
+    <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="battleship.Main" />
+      <module name="task.Battleship.Battleship-task.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="battleship.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="ALTERNATIVE_JRE_PATH" value="11" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="MAIN_CLASS_NAME" value="battleship.Main" />
+      <module name="Battleship.Battleship-task.main" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Scratch" type="Java Scratch" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Scratch" />
+      <option name="SCRATCH_FILE_URL" value="file://$APPLICATION_CONFIG_DIR$/scratches/scratch.java" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.Main" />
+      <item itemvalue="Application.Main (1)" />
+      <item itemvalue="Java Scratch.Scratch" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main (1)" />
+        <item itemvalue="Application.Main" />
+        <item itemvalue="Java Scratch.Scratch" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="3dc38dba-f4d7-40b0-827c-884868cdafd9" name="Default Changelist" comment="" />
+      <created>1606108311964</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1606108311964</updated>
+      <workItem from="1606108313389" duration="94596000" />
+      <workItem from="1606473414401" duration="72000" />
+      <workItem from="1606473498574" duration="19852000" />
+      <workItem from="1606571788473" duration="2020000" />
+      <workItem from="1606583140986" duration="2482000" />
+      <workItem from="1606660365671" duration="363000" />
+      <workItem from="1606660742412" duration="170000" />
+      <workItem from="1606660924981" duration="578000" />
+      <workItem from="1606661525748" duration="377000" />
+      <workItem from="1606661916001" duration="8254000" />
+      <workItem from="1606721507788" duration="4353000" />
+      <workItem from="1606744856810" duration="22000" />
+      <workItem from="1606803805250" duration="22407000" />
+      <workItem from="1606984760419" duration="546000" />
+      <workItem from="1606985571473" duration="159000" />
+      <workItem from="1606985743525" duration="338000" />
+      <workItem from="1606986094596" duration="14277000" />
+      <workItem from="1607054642538" duration="10883000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="4/5 stage" />
+    <option name="LAST_COMMIT_MESSAGE" value="4/5 stage" />
+  </component>
+</project>
